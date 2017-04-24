@@ -3,6 +3,7 @@ You'll need to create a new step to your own GitHub account by modifying this re
 - wire in a new input: `download_url`
 - download a json file into a temporary directory from the url given in `download_url`
 - unmarshal the json file and log out the received object containing the json field values
+
 And finally close the task by sending a Pull Request to this repository's master branch.
 
 You'll find examples seperated by tasks to help understanding step structure and golang below.
