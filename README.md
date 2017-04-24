@@ -10,7 +10,33 @@ You'll need to create a new step to your own GitHub account by modifying this re
   * Our go-utils package (https://github.com/bitrise-io/go-utils) has `pathutil` and `fileutil` where you can find path  and file related common functions.
 4. unmarshal the json file and log out the received object containing the json field values
   * This step (https://github.com/bitrise-steplib/steps-xamarin-test-cloud-for-android/) uses json unmarshal code as well.
-5. Send a Pull Request to this repository's master branch.
+5. Run your test workflow on bitrise.io using the sample bitrise.yml below, but don't forget to tune it to your repository.
+```
+---
+format_version: 1.3.1
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+app:
+  envs:
+  - GO15VENDOREXPERIMENT: '1'
+  - SRC_DIR_IN_GOPATH: "$GOPATH/src/github.com/trapacska/step-template-go"
+trigger_map:
+- push_branch: "*"
+  workflow: primary
+- pull_request_source_branch: "*"
+  workflow: primary
+workflows:
+  primary:
+    steps:
+    - change-workdir:
+        inputs:
+        - path: "${SRC_DIR_IN_GOPATH}"
+    - git-clone: {}
+    - script:
+        inputs:
+        - content: bitrise run test
+
+```
+6. Send a Pull Request to this repository's master branch.
 
 ---
 
