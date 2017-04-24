@@ -1,4 +1,4 @@
-format_version: 1.1.0
+format_version: 1.4.0
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
 app:
@@ -101,9 +101,6 @@ workflows:
             #!/bin/bash
             set -ex
             go get -u -v github.com/tools/godep
-            go get github.com/davecgh/go-spew/spew
-            go get github.com/pmezard/go-difflib/difflib
-            go get github.com/bitrise-tools/go-xcode/xcodeproj
             rm -rf ./Godeps
             rm -rf ./vendor
             go get -t -d ./...
