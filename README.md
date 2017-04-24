@@ -5,10 +5,10 @@ You'll need to create a new step to your own GitHub account by modifying this re
 2. Wire in a new input: `download_url`
   * You can find an input already wired in (`step.yml/example_step_input`) in this repository.
   * https://github.com/bitrise-io/bitrise/blob/master/_docs/bitrise-yml-format-spec.md#step-properties  
-3. download a json file into a temporary directory from the url given in `download_url`
+3. Download a json file into a temporary directory from the url given in `download_url`
   * This step (https://github.com/bitrise-steplib/steps-google-play-deploy) uses file downloading code as well.
   * Our go-utils package (https://github.com/bitrise-io/go-utils) has `pathutil` and `fileutil` where you can find path  and file related common functions.
-4. unmarshal the json file and log out the received object containing the json field values
+4. Unmarshal the json file and log out the received object containing the json field values
   * This step (https://github.com/bitrise-steplib/steps-xamarin-test-cloud-for-android/) uses json unmarshal code as well.
 5. Run your test workflow on bitrise.io using the sample bitrise.yml below, but don't forget to tune it to your repository.
 ```
