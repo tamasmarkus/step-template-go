@@ -1,3 +1,34 @@
+# Task
+You'll need to create a new step to your own GitHub account by modifying this repository:
+- wire in a new input: `download_url`
+- download a json file into a temporary directory from the url given in `download_url`
+- unmarshal the json file and log out the received object containing the json field values
+And finally close the task by sending a Pull Request to this repository's master branch.
+
+You'll find examples seperated by tasks to help understanding step structure and golang below.
+
+## First step
+- Fork this repository to your GitHub account.
+
+## Wiring in a new input
+- You can find an input already wired in (`example_step_input`) in this repository.
+
+## Downloading a file
+- This step (https://github.com/bitrise-steplib/steps-google-play-deploy) uses file downloading code as well.
+
+## Creating temporary directories
+- Our go-utils package (https://github.com/bitrise-io/go-utils) has a `pathutil` where you can find path related common functions.
+
+## Unmarshalling a json file
+- This step (https://github.com/bitrise-steplib/steps-xamarin-test-cloud-for-android/) uses json unmarshal code as well.
+
+## Last step
+- Send a Pull Request to this repository's master branch.
+
+
+---
+
+
 # My Awesome Go Step
 
 My Awesome Go Step is a solid starting code base for
