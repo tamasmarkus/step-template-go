@@ -1,4 +1,7 @@
 #!/bin/bash
+##################################################################################################
+### We keep this to maintain step compatibility for services using Bitrise CLI version below 1.4.0
+##################################################################################################
 set -ex
 THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

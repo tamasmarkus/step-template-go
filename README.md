@@ -1,6 +1,6 @@
-# Go step template
+# My Awesome Go Step
 
-Go step template is a solid starting code base for
+My Awesome Go Step is a solid starting code base for
 a new Step.
 
 
