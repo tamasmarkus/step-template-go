@@ -1,10 +1,9 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"os"
-
-	"errors"
 
 	"github.com/bitrise-io/go-utils/log"
 )
