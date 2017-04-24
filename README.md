@@ -1,31 +1,16 @@
 # Task
-You'll need to create a new step to your own GitHub account by modifying this repository:
-- wire in a new input: `download_url`
-- download a json file into a temporary directory from the url given in `download_url`
-- unmarshal the json file and log out the received object containing the json field values
+You'll need to create a new step to your own GitHub account by modifying this repository. The step's main functionality will be to download a json file from an url, store it in a temporary directory, unmarshal it, and log out the received object.
 
-And finally close the task by sending a Pull Request to this repository's master branch.
-
-You'll find examples seperated by tasks to help understanding step structure and golang below.
-
-## First step
-- Fork this repository to your GitHub account.
-
-## Wiring in a new input
-- You can find an input already wired in (`example_step_input`) in this repository.
-
-## Downloading a file
-- This step (https://github.com/bitrise-steplib/steps-google-play-deploy) uses file downloading code as well.
-
-## Creating temporary directories
-- Our go-utils package (https://github.com/bitrise-io/go-utils) has a `pathutil` where you can find path related common functions.
-
-## Unmarshalling a json file
-- This step (https://github.com/bitrise-steplib/steps-xamarin-test-cloud-for-android/) uses json unmarshal code as well.
-
-## Last step
-- Send a Pull Request to this repository's master branch.
-
+1. Fork this repository to your GitHub account.
+2. Wire in a new input: `download_url`
+  * You can find an input already wired in (`example_step_input`) in this repository.
+  * https://github.com/bitrise-io/bitrise/blob/master/_docs/bitrise-yml-format-spec.md#step-properties  
+3. download a json file into a temporary directory from the url given in `download_url`
+  * This step (https://github.com/bitrise-steplib/steps-google-play-deploy) uses file downloading code as well.
+  * Our go-utils package (https://github.com/bitrise-io/go-utils) has `pathutil` and `fileutil` where you can find path  and file related common functions.
+4. unmarshal the json file and log out the received object containing the json field values
+  * This step (https://github.com/bitrise-steplib/steps-xamarin-test-cloud-for-android/) uses json unmarshal code as well.
+5. Send a Pull Request to this repository's master branch.
 
 ---
 
