@@ -3,7 +3,7 @@ You'll need to create a new step to your own GitHub account by modifying this re
 
 *To complete this task you'll need Ubuntu or OSX, if you have a windows machine you can install Ubuntu in VirtualBox, or if you follow 5. and 6. steps below then you can test it on bitrise.io as well.*
 
-*To run a workflow locally, you'll need to install Bitrise CLI, setup instructions and source available here: https://github.com/bitrise-io/bitrise/releases/tag/1.5.6*
+*To run a workflow locally, you'll need to install Bitrise CLI, setup instructions and source available here: https://github.com/bitrise-io/bitrise/releases*
 
 1. Fork this repository to your GitHub account.
 2. Wire in a new input: `download_url`
