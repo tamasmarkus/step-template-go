@@ -3,7 +3,7 @@ You'll need to create a new step to your own GitHub account by modifying this re
 
 1. Fork this repository to your GitHub account.
 2. Wire in a new input: `download_url`
-  * You can find an input already wired in (`example_step_input`) in this repository.
+  * You can find an input already wired in (`step.yml/example_step_input`) in this repository.
   * https://github.com/bitrise-io/bitrise/blob/master/_docs/bitrise-yml-format-spec.md#step-properties  
 3. download a json file into a temporary directory from the url given in `download_url`
   * This step (https://github.com/bitrise-steplib/steps-google-play-deploy) uses file downloading code as well.
