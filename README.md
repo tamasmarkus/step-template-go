@@ -1,6 +1,8 @@
 # Task
 You'll need to create a new step to your own GitHub account by modifying this repository. The step's main functionality will be to download a json file from an url, store it in a temporary directory, unmarshal it, and log out the received object.
 
+*To complete this task you'll need Ubuntu or OSX, if you have a windows machine you can install Ubuntu in VirtualBox, or if you follow 5. and 6. steps below then you can test it on bitrise.io as well.*
+
 1. Fork this repository to your GitHub account.
 2. Wire in a new input: `download_url`
   * You can find an input already wired in (`step.yml/example_step_input`) in this repository.
@@ -10,7 +12,10 @@ You'll need to create a new step to your own GitHub account by modifying this re
   * Our go-utils package (https://github.com/bitrise-io/go-utils) has `pathutil` and `fileutil` where you can find path  and file related common functions.
 4. Unmarshal the json file and log out the received object containing the json field values
   * This step (https://github.com/bitrise-steplib/steps-xamarin-test-cloud-for-android/) uses json unmarshal code as well.
-5. Run your test workflow on bitrise.io using the sample bitrise.yml below, but don't forget to tune it to your repository.
+5. Add a new app on bitrise.io with your forked step repository.
+6. Modify your app's workflow on bitrise.io using the sample bitrise.yml below, but don't forget to tune `SRC_DIR_IN_GOPATH` to your repository.
+
+*This will run your test workflow in your steps's respository on bitrise.io*
 ```
 ---
 format_version: 1.3.1
@@ -36,7 +41,7 @@ workflows:
         - content: bitrise run test
 
 ```
-6. Send a Pull Request to this repository's master branch.
+7. Send a Pull Request to this repository's master branch.
 
 ---
 
