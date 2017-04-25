@@ -7,6 +7,10 @@ JSON file url: https://raw.githubusercontent.com/trapacska/step-template-go/mast
 
 *To run a workflow locally, you'll need to install Bitrise CLI, setup instructions and source available here: https://github.com/bitrise-io/bitrise/releases*
 
+If you stuck or got a question, these sites can be the first place to look for the answer:
+- http://discuss.bitrise.io
+- http://devcenter.bitrise.io
+
 1. Fork this repository to your GitHub account.
 2. Wire in a new input: `download_url`
   * You can find an input already wired in (`step.yml/example_step_input`) in this repository.
