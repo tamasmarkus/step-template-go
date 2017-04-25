@@ -1,6 +1,8 @@
 # Task
 You'll need to create a new step to your own GitHub account by modifying this repository. The step's main functionality will be to download a json file from an url, store it in a temporary directory, unmarshal it, and log out the received object.
 
+JSON file url: https://raw.githubusercontent.com/trapacska/step-template-go/master/misc/build.json
+
 *To complete this task you'll need Ubuntu or OSX, if you have a windows machine you can install Ubuntu in VirtualBox, or if you follow 5. and 6. steps below then you can test it on bitrise.io as well.*
 
 *To run a workflow locally, you'll need to install Bitrise CLI, setup instructions and source available here: https://github.com/bitrise-io/bitrise/releases*
