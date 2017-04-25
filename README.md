@@ -11,6 +11,8 @@ If you stuck or got a question, these sites can be the first place to look for t
 - http://discuss.bitrise.io
 - http://devcenter.bitrise.io
 
+---
+
 1. Fork this repository to your GitHub account.
 2. Wire in a new input: `download_url`
   * You can find an input already wired in (`step.yml/example_step_input`) in this repository.
