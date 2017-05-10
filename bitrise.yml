@@ -31,8 +31,7 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - example_step_input: Example Step Input's value
-
+        - download_url: https://raw.githubusercontent.com/trapacska/step-template-go/master/misc/build.json
   go-tests:
     before_run:
     - _install-test-tools
@@ -51,6 +50,7 @@ workflows:
         - content: |-
             #!/bin/bash
             set -ex
+            go get -u -v github.com/kisielk/errcheck
             errcheck -asserts=true -blank=true $GOLIST_WITHOUT_VENDOR
     - script:
         title: Go lint
